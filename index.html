@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Edytor html</title>
+</head>
+<body>
+
+<center>
+<br>
+<input type="button" id="btn" value="h1"  onclick="h1()">
+<input type="button" id="btn" value="h2"  onclick="h2()">
+<input type="button" id="btn" value="h3"  onclick="h3()">
+<input type="button" id="btn" value="h4"  onclick="h4()">
+<input type="button" id="btn" value="h5"  onclick="h5()">
+<input type="button" id="btn" value="h6"  onclick="h6()">
+
+<input type="button" id="btn" value="body"  onclick="bodyy()">
+
+
+<br>
+<br>
+<form>
+<textarea type="textarea" id="text"></textarea>
+<br>
+<input type="reset" id="btn" value="wyczysc" onclick="clearArea()">
+</form>
+</center>
+
+<script>
+    //znaczniki h
+function h1(){
+document.getElementById('text').innerHTML += "&lt;h1&gt;\n\n&lt;/h1&gt;";
+}
+function h2(){
+document.getElementById('text').innerHTML += "&lt;h2&gt;\n\n&lt;/h2&gt;";
+}
+function h3(){
+document.getElementById('text').innerHTML += "&lt;h3&gt;\n\n&lt;/h3&gt;";
+}
+function h4(){
+document.getElementById('text').innerHTML += "&lt;h4&gt;\n\n&lt;/h4&gt;";
+}
+function h5(){
+document.getElementById('text').innerHTML += "&lt;h5&gt;\n\n&lt;/h5&gt;";
+}
+function h6(){
+document.getElementById('text').innerHTML += "&lt;h6&gt;\n\n&lt;/h6&gt;";
+}
+
+//znaczniki sekcji
+function bodyy(){
+document.getElementById('text').innerHTML += "&lt;body&gt;\n\n&lt;/body&gt;";
+}
+
+//clear
+function clearArea(){
+document.getElementById('text').innerHTML = " ";
+    
+}
+
+
+</script>
+
+<!-- <script>
+    document.getElementById("trigger").addEventListener("click", function(){
+        var myElement = document.getElementById('text-element');
+        var startPosition = myElement.selectionStart;
+        var endPosition = myElement.selectionEnd;
+        
+        // Check if you've selected text
+        if(startPosition == endPosition){
+            alert("The position of the cursor is (" + startPosition + "/" + myElement.value.length + ")");
+        }else{
+            alert("Selected text from ("+ startPosition +" to "+ endPosition + " of " + myElement.value.length + ")");
+        }
+    },false);
+</script> -->
+
+</body>
+</html>

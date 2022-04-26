@@ -1,0 +1,40 @@
+body{
+
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    }
+    
+    #text{
+    
+    width: 500px;
+    height: 500px;
+    
+    
+    }
+    #btn{
+            transition-duration: 0.19s;
+            background-color: white; 
+            color: black; 
+            border: 2px solid #e6cb35;
+            font-size: 26px;
+    
+    }    
+    #btn:hover{
+            background-color: #d4ba44; 
+            color: white;
+    }
+    
+    #trigger{
+        transition-duration: 0.19s;
+        background-color: white; 
+        color: black; 
+        border: 2px solid #63bce6;
+        font-size: 26px;
+    
+    }    
+    #trigger:hover{
+        background-color: #63bce6; 
+        color: white;
+    }
